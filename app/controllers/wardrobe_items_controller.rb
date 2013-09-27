@@ -7,4 +7,8 @@ class WardrobeItemsController < ApplicationController
       format.json { render json: @wardrobe_items }
     end
   end
+
+  def show
+    @wardrobe_item = WardrobeItem.find(params[:id])
+  end
 end
