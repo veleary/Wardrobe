@@ -5,6 +5,8 @@ describe WardrobeItemsController do
     it 'assigns all wardrobe items as @wardrobe_items' do
       wardrobe_item = WardrobeItem.create
       get :index
+
+      expect(assigns('wardrobe_items')).to eq([wardrobe_item])
     end
   end
 end
