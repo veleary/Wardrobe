@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Garment:</strong>
+  <%= @wardrobe_item.garment %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @wardrobe_item.label %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @wardrobe_item.season %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @wardrobe_item.color %>
+</p>
+
+<%= link_to 'Edit', edit_wardrobe_item_path(@wardrobe_item) %> |
+<%= link_to 'Back', wardrobe_items_path %>
