@@ -13,6 +13,6 @@ class WardrobeItemsController < ApplicationController
   end
 
   def new
-
+    @wardrobe_item = WardrobeItem.new
   end
 end
